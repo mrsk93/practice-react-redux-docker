@@ -1,14 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
+
+import "./App.css";
+import React from "react";
+import { Switch,  Route } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Book } from "./components/Book";
+import { BooksList } from "./components/BooksList";
 
 function App() {
   // React.useEffect(()=>{alert('Hi from sumits react app')})
   return (
-    <div className="App" >
-        My name is Sumit Kumar
-        <img alt={'sdsdsdsds'} className="App-logo" src={logo} />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Book />
+        </Route>
+        <Route path="/books">
+          <BooksList />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
