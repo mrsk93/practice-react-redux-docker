@@ -1,3 +1,7 @@
+# Practice App using React-Redux-Docker with Create React App
+
+This is a practice react project having implementations of react, redux and docker.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
